@@ -79,20 +79,6 @@ add_theme_support( 'custom-line-height' );
 // Add support for custom units.
 add_theme_support( 'custom-units' );
 
-$seraphimx_appearance = genesis_get_config( 'appearance' );
-
-// Adds support for editor font sizes.
-add_theme_support(
-	'editor-font-sizes',
-	$seraphimx_appearance['editor-font-sizes']
-);
-
-// Adds support for editor color palette.
-add_theme_support(
-	'editor-color-palette',
-	$seraphimx_appearance['editor-color-palette']
-);
-
 add_action( 'after_setup_theme', 'seraphimx_content_width', 0 );
 /**
  * Set content width to match the “wide” Gutenberg block width.
